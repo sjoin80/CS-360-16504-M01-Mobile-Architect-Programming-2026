@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Inventory Screen UI
+    Displays input fields and a grid-style table for inventory items.
+    Uses TableLayout to meet grid display requirements per assignment rubric.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <!-- Screen Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inventory"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Input Field: Item Name -->
+    <EditText
+        android:id="@+id/itemNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Item Name"
+        android:inputType="text"
+        android:autofillHints="name" />
+
+    <!-- Input Field: Quantity -->
+    <EditText
+        android:id="@+id/itemQtyInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Quantity"
+        android:inputType="number"
+        android:layout_marginTop="8dp" />
+
+    <!-- Button: Add Item -->
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="Add Item"
+        android:layout_marginTop="8dp" />
+
+    <!-- Inventory Grid Table -->
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:stretchColumns="*">
+
+        <!-- Header Row -->
+        <TableRow>
+
+            <TextView
+                android:text="Item"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:padding="8dp" />
+
+            <TextView
+                android:text="Qty"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:padding="8dp" />
+
+            <TextView
+                android:text="Delete"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:padding="8dp" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

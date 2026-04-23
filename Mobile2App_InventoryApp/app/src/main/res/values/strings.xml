@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Mobile2App Inventory</string>
+    <string name="login_title">Mobile2App Inventory Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="create_account">Create Account</string>
+</resources>
